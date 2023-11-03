@@ -11,8 +11,6 @@ import ua.edu.ucu.apps.spring.decorators.BasketDecorator;
 
 import org.junit.jupiter.api.Assertions;
 
-import java.util.Random;
-
 public class DecoratorsTests {
     private Flower flower;
     private AbstractDecorator ribbonDecorator;
