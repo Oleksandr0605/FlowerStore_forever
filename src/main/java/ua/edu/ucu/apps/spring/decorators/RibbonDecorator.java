@@ -9,14 +9,14 @@ public class RibbonDecorator extends AbstractDecorator {
     @Getter @Setter 
     private String description;
 
-    public RibbonDecorator(Item get_item) {
-        item = get_item;
+    public RibbonDecorator(Item getItem) {
+        item = getItem;
         description = "This is a ribbon";
     }
 
-    public RibbonDecorator(Item get_item, String get_description) {
-        item = get_item;
-        description = get_description;
+    public RibbonDecorator(Item getItem, String getDescription) {
+        item = getItem;
+        description = getDescription;
     }
 
     @Override

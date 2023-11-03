@@ -14,9 +14,9 @@ public class PaperDecorator extends AbstractDecorator {
         description = "This is a basket";
     }
 
-    public PaperDecorator(Item get_item, String get_description) {
-        item = get_item;
-        description = get_description;
+    public PaperDecorator(Item getItem, String getDescription) {
+        item = getItem;
+        description = getDescription;
     }
 
     @Override
