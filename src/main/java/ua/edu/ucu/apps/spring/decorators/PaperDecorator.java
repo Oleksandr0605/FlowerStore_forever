@@ -9,8 +9,8 @@ public class PaperDecorator extends AbstractDecorator {
     @Getter @Setter 
     private String description;
 
-    public PaperDecorator(Item get_item) {
-        item = get_item;
+    public PaperDecorator(Item getItem) {
+        item = getItem;
         description = "This is a basket";
     }
 
@@ -21,6 +21,7 @@ public class PaperDecorator extends AbstractDecorator {
 
     @Override
     public double getPrice() {
-        return 13 + item.getPrice();
+        int addind = 13;
+        return item.getPrice() + addind;
     }
 }

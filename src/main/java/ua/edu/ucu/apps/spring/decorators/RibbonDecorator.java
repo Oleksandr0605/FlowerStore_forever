@@ -21,6 +21,7 @@ public class RibbonDecorator extends AbstractDecorator {
 
     @Override
     public double getPrice() {
-        return 40 + item.getPrice();
+        int addind = 40;
+        return item.getPrice() + addind;
     }
 }

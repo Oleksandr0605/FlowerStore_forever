@@ -21,6 +21,7 @@ public class BasketDecorator extends AbstractDecorator {
 
     @Override
     public double getPrice() {
-        return 4 + item.getPrice();
+        int addind = 4;
+        return item.getPrice() + addind;
     }
 }
