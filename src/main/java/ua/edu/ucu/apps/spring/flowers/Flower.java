@@ -10,7 +10,7 @@ import lombok.ToString;
 
 @Setter @ToString
 @Entity
-public class Flower {
+public class Flower extends Item {
     @Id
     private Integer id;
     @Getter
