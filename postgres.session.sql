@@ -1,0 +1,1 @@
+INSERT flower(id, price, color, sepal_length) VALUES(1, 1.2, 0, 1.3);
