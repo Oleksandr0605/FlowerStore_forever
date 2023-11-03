@@ -16,7 +16,11 @@ public class DecoratorsTests {
     private AbstractDecorator ribbonDecorator;
     private AbstractDecorator paperDecorator;
     private AbstractDecorator basketDecorator;
-        
+
+    private static final int RIBBON_COST = 40;
+    private static final int PAPER_COST = 13;
+    private static final int BASKET_COST = 4;
+
     @BeforeEach
     public void setUp() {
         flower = new Flower();
@@ -27,16 +31,16 @@ public class DecoratorsTests {
 
     @Test
     public void testRibbonDecorator() {
-        Assertions.assertEquals(ribbonDecorator.getPrice(), flower.getPrice() + 40);
+        Assertions.assertEquals(ribbonDecorator.getPrice(), flower.getPrice() + RIBBON_COST);
     }
 
     @Test
     public void testPaperDecorator() {
-        Assertions.assertEquals(paperDecorator.getPrice(), flower.getPrice() + 13);
+        Assertions.assertEquals(paperDecorator.getPrice(), flower.getPrice() + PAPER_COST);
     }
 
     @Test
     public void testBasketDecorator() {
-        Assertions.assertEquals(basketDecorator.getPrice(), flower.getPrice() + 4);
+        Assertions.assertEquals(basketDecorator.getPrice(), flower.getPrice() + BASKET_COST);
     }
 }
