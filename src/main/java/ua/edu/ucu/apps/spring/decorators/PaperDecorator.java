@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 public class PaperDecorator extends AbstractDecorator {
+    private static final int ADDITION_CONSTANT = 13;
     private Item item;
     @Getter @Setter 
     private String description;
@@ -21,7 +22,6 @@ public class PaperDecorator extends AbstractDecorator {
 
     @Override
     public double getPrice() {
-        int addind = 13;
-        return item.getPrice() + addind;
+        return item.getPrice() + ADDITION_CONSTANT;
     }
 }
